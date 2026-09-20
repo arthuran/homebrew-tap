@@ -3,7 +3,7 @@ class ZteCpeMonitor < Formula
   homepage "https://github.com/arthuran/zte-cpe-monitor"
   url "https://github.com/arthuran/zte-cpe-monitor.git",
       tag:      "v0.1.0",
-      revision: "c6537e4fd03b2cc1bea100693e57d344b377a72a"
+      revision: "54a7664eb2b1fcd3ebb2ed5adc911832a2555330"
   license "MIT"
 
   depends_on "python@3.14"
