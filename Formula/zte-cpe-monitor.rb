@@ -2,8 +2,8 @@ class ZteCpeMonitor < Formula
   desc "On-demand CLI and temporary dashboard for compatible ZTE CPE radio status"
   homepage "https://github.com/arthuran/zte-cpe-monitor"
   url "https://github.com/arthuran/zte-cpe-monitor.git",
-      tag:      "v0.1.0",
-      revision: "28c10d847b5919e8962d5a7ce87048a3c3b2cece"
+      tag:      "v0.2.0",
+      revision: "5ce8d0cfb7eea2748223ea1b55e3a67d4a9de90c"
   license "MIT"
 
   depends_on "python@3.14"
@@ -16,6 +16,6 @@ class ZteCpeMonitor < Formula
   end
 
   test do
-    assert_match "zte-cpe 0.1.0", shell_output("#{bin}/zte-cpe --version")
+    assert_match "zte-cpe 0.2.0", shell_output("#{bin}/zte-cpe --version")
   end
 end
