@@ -11,9 +11,12 @@ class Rivs < Formula
   depends_on arch: :arm64
   depends_on :macos
 
+  def fetch
+    system "cargo", "fetch", "--locked"
+  end
+
   def install
-    system "cargo", "fetch", *std_cargo_fetch_args
-    system "cargo", "install", *std_cargo_args
+    system "cargo", "install", "--locked", "--root=#{prefix}", "--path=.", "--offline"
   end
 
   test do
