@@ -3,8 +3,8 @@ class Rivs < Formula
   homepage "https://github.com/arthuran/rivs"
   url "git@github.com:arthuran/rivs.git",
       using:    :git,
-      tag:      "v0.6.2",
-      revision: "30d5b6756b676f2ebacf1a7371dd6c42a7f6f97e"
+      tag:      "v0.7.0",
+      revision: "370c277d56abc052ed8e88e37895804e40ae4e0d"
   license "MIT"
 
   depends_on "rust" => :build
@@ -17,6 +17,6 @@ class Rivs < Formula
   end
 
   test do
-    assert_match "rivs 0.6.2", shell_output("#{bin}/rivs --version")
+    assert_match "rivs 0.7.0", shell_output("#{bin}/rivs --version")
   end
 end
